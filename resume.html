@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adarsh Portfolio</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    color:white;
+    padding:20px;
+
+    background-color:#0f172a;
+
+    background-image:
+    linear-gradient(rgba(59,130,246,0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59,130,246,0.08) 1px, transparent 1px);
+
+    background-size:35px 35px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.header{
+    background:linear-gradient(135deg,#0f3cc9,#2563eb);
+    border-radius:20px;
+    text-align:center;
+    padding:40px;
+    margin-bottom:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+
+.profile-circle{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    background:#0f172a;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:40px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.header h1{
+    font-size:3rem;
+}
+
+.header p{
+    color:#cbd5e1;
+    margin-top:10px;
+}
+
+.contact{
+    margin-top:20px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    color:#dbeafe;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.card{
+    background:rgba(15,23,42,0.95);
+    border:1px solid rgba(59,130,246,.25);
+    border-radius:18px;
+    padding:25px;
+    backdrop-filter:blur(5px);
+
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    border-color:#3b82f6;
+}
+
+.full{
+    grid-column:span 2;
+}
+
+h2{
+    color:#60a5fa;
+    margin-bottom:20px;
+}
+
+h2 i{
+    margin-right:10px;
+}
+
+.card p{
+    line-height:1.8;
+    color:#d1d5db;
+}
+
+ul{
+    padding-left:20px;
+}
+
+li{
+    margin-bottom:10px;
+    color:#d1d5db;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.skill{
+    background:#1d4ed8;
+    padding:10px 18px;
+    border-radius:30px;
+    font-weight:500;
+}
+
+.footer{
+    text-align:center;
+    margin-top:25px;
+    padding:20px;
+    border-radius:15px;
+    background:#111827;
+    color:#94a3b8;
+}
+
+@media(max-width:768px){
+
+.grid{
+    grid-template-columns:1fr;
+}
+
+.full{
+    grid-column:span 1;
+}
+
+.header h1{
+    font-size:2rem;
+}
+
+.contact{
+    flex-direction:column;
+    gap:10px;
+}
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<div class="header">
+
+<div class="profile-circle">
+AP
+</div>
+
+<h1>ADARSH PANDEY</h1>
+
+
+
+<div class="contact">
+<span><i class="fa-solid fa-location-dot"></i> Prayagraj</span>
+<span><i class="fa-solid fa-envelope"></i> adarsh@email.com</span>
+<span><i class="fa-solid fa-phone"></i> +91 XXXXX XXXXX</span>
+</div>
+
+</div>
+
+<div class="grid">
+
+<div class="card">
+<h2><i class="fa-solid fa-user"></i> About Me</h2>
+
+<p>
+First-year B.Tech CSE student passionate about coding,
+web development and problem solving. Currently learning
+HTML, CSS, JavaScript and preparing for MERN stack
+development.
+</p>
+
+</div>
+
+<div class="card">
+<h2><i class="fa-solid fa-graduation-cap"></i> Education</h2>
+
+<ul>
+<li>B.Tech CSE - United College</li>
+<li>Class 12 PCM</li>
+<li>Class 10 CBSE</li>
+</ul>
+
+</div>
+
+<div class="card full">
+
+<h2><i class="fa-solid fa-code"></i> Skills</h2>
+
+<div class="skills">
+
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+
+<div class="skill">Python</div>
+<div class="skill">C/C++</div>
+<div class="skill">Java</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2><i class="fa-solid fa-trophy"></i> Achievements</h2>
+
+<ul>
+<li>Won Inter-School Football Tournament</li>
+<li>Active Participation in School Sports Events</li>
+<li>Built Personal Portfolio</li>
+</ul>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h2><i class="fa-solid fa-rocket"></i> Projects</h2>
+
+<ul>
+
+<li>Portfolio Website</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2><i class="fa-solid fa-heart"></i> Hobbies</h2>
+
+<ul>
+<li>Music</li>
+<li>football</li>
+<li>Running</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="footer">
+        Thank you for visiting my portfolio🕊️
+</div>
+
+</div>
+
+</body>
+</html>
